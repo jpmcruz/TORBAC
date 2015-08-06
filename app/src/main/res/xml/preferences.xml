@@ -1,0 +1,35 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Default Folders">
+
+        <Preference
+                android:key="base_preference"
+                android:title="Default Folder for Base Files"
+                android:summary="_">
+                <intent
+             android:action="android.intent.action.VIEW"
+             android:targetPackage="jason.cruz.torbac"
+             android:targetClass="jason.cruz.torbac.RoleResponse2" />
+             </Preference>
+        
+        <EditTextPreference
+                android:key="role_preference"
+                android:title="Default Folder for Key Files"
+                android:summary="_"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="PreferenceCategory B">
+
+        <EditTextPreference
+                android:key="edittext_preference"
+                android:title="title_edittext_preference"
+                android:summary="summary_edittext_preference"
+                android:dialogTitle="dialog_title_edittext_preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

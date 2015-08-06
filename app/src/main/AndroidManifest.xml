@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jason.cruz.torbac" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:launchMode="singleTask" >
+        <activity
+            android:name="jason.cruz.torbac.Main_Screen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".GenParams"
+            android:screenOrientation="portrait"
+            android:logo="@drawable/ic_action_share"  >
+            <intent-filter >
+                <action android:name="cruz.jason.gen_params" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".RKeyGenerateMaster"
+            android:screenOrientation="portrait"
+            android:logo="@drawable/ic_action_refresh" >>
+            <intent-filter >
+                <action android:name="cruz.jason.rkey_generate_master" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".FileChooser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter >
+                <action android:name="cruz.jason.file_chooser" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".RKeyGenerate"
+            android:screenOrientation="portrait"
+            android:logo="@drawable/ic_action_refresh" >
+            <intent-filter >
+                <action android:name="cruz.jason.rkey_generate" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".RoleChallenge2"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:logo="@drawable/ic_action_paste" >
+            <intent-filter >
+                <action android:name="cruz.jason.role_challenge2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".RoleResponse2"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:logo="@drawable/ic_action_send">
+            <intent-filter >
+                <action android:name="cruz.jason.role_response2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreferencesSettings"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

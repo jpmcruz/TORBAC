@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".GenParams"
+    >
+    <!-- Single menu item 
+         Set id, icon and Title for each menu item
+    -->
+    <item android:id="@+id/save_master"
+          android:icon="@drawable/ic_action_copy"
+          android:title="Master" 
+           app:showAsAction="always|withText"/>
+    
+        <item android:id="@+id/save_base"
+          android:icon="@drawable/ic_action_copy"
+          android:title="Base" 
+           app:showAsAction="always|withText"/>
+ 
+    <item android:id="@+id/settings"
+          android:icon="@drawable/ic_launcher"
+          android:title="Settings" />
+</menu>

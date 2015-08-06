@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Role Response" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base File"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_base"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bt_Browse1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Browse" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LinearLayout01" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role Key File"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_RoleKeyFile"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:text="" >
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_Browse2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Browse" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ChallengeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:text="\n\n\n\n\n"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_alignRight="@+id/bt_Finish"
+        android:layout_below="@+id/TextView02" >
+
+        <TextView
+            android:id="@+id/tv_ResponseData"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:text="sadasd"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/file_icon" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_Finish"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/LinearLayout01"
+        android:layout_below="@+id/linearLayout3"
+        android:text="Finish" />
+
+    <Button
+        android:id="@+id/bt_CreateResponse"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_Finish"
+        android:layout_alignBottom="@+id/bt_Finish"
+        android:layout_toLeftOf="@+id/bt_Finish"
+        android:text="Create Response QR Code" />
+
+    <TextView
+        android:id="@+id/txt_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_Finish"
+        android:text="Browse for the Base and Role Key Files, and then Scan Challenge QR Code."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_Role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LinearLayout05"
+        android:layout_below="@+id/LinearLayout05"
+        android:text="Role"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_Role"
+        android:layout_below="@+id/tv_Role" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Challenge Data:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/bt_ScanChallenge"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Scan Challenge QR Code" />
+
+        <Button
+            android:id="@+id/bt_Decrypt"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:text="Decrypt" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_ChallengeData"
+        android:layout_below="@+id/tv_ChallengeData"
+        android:text="Response Data:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

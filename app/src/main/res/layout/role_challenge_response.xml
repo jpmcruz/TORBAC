@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Role Challenge/Response" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base File"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_Base"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number|text"
+            android:text="C://base.file" />
+
+        <Button
+            android:id="@+id/bt_Browse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Browse" />
+
+        <Button
+            android:id="@+id/bt_Set"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Set" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LinearLayout01"
+        android:layout_below="@+id/LinearLayout01"
+        android:layout_marginTop="1dp" >
+
+        <TextView
+            android:id="@+id/tvRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role Name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_roleName"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="naist.student" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_Challenge"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Challenge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/LinearLayout01"
+        android:layout_below="@+id/txt_Status"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/bt_Finish"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Finish" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:text="Challenge Data:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_ChallengeData"
+        android:layout_below="@+id/tv_ChallengeData"
+        android:text="Response Data:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txt_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_ResponseData"
+        android:layout_below="@+id/tv_ResponseData"
+        android:text="Checking..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_ChallengeData"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="HIBEId rbac@yahoo.com"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bt_Check"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignTop="@+id/TextView02"
+        android:text="Check" />
+
+    <TextView
+        android:id="@+id/tv_ResponseData"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_alignRight="@+id/bt_Check"
+        android:layout_below="@+id/bt_Check"
+        android:text="In8902cd\njol23asd"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout2" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base File"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_base"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number|text"
+            android:text="C://base.file" />
+
+        <Button
+            android:id="@+id/bt_Browse1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Browse" />
+
+        <Button
+            android:id="@+id/bt_Set1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Set" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LinearLayout02"
+        android:layout_below="@+id/LinearLayout02" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role Key File"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/et_RoleKeyFile"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number|text"
+            android:text="C://naist.student" />
+
+        <Button
+            android:id="@+id/bt_Browse2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Browse" />
+
+        <Button
+            android:id="@+id/bt_Set2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Set" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_Decrypt"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/LinearLayout05"
+        android:layout_below="@+id/LinearLayout05"
+        android:text="Decrypt" />
+
+</RelativeLayout>

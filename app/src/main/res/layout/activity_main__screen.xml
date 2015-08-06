@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main_Screen" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="33" >
+
+            <Button
+                android:id="@+id/bt_GenParams"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom|center_horizontal"
+                android:text="Gen Params"
+                android:textSize="15sp"
+                android:layout_weight="50"
+                android:background="@drawable/ic_action_share_dark" 
+                />
+
+            <ImageButton
+                android:id="@+id/bt_about"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="50"
+                android:src="@drawable/apal_logo"
+                android:text="About" 
+                android:background="#FFFFFF"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:layout_weight="33">
+
+            <Button
+                android:id="@+id/bt_RKeyGenerateMaster"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="RKeyGenerateMaster"
+                android:textSize="12sp"
+ 				android:layout_weight="50"
+ 				android:gravity="bottom|center_horizontal"
+ 				android:background="@drawable/ic_action_labels"/>
+
+            <Button
+                android:id="@+id/bt_RKeyGenerate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="RKeyGenerate"
+                android:textSize="15sp"
+				android:layout_weight="50"
+				android:gravity="bottom|center_horizontal"
+				android:background="@drawable/ic_action_copy_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:layout_weight="33">
+
+            <Button
+                android:id="@+id/bt_RoleChallenge"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Role Challenge"
+                android:textSize="15sp"
+                android:layout_weight="50"
+                android:gravity="bottom|center_horizontal"
+                android:background="@drawable/ic_action_location_searching" />
+
+            <Button
+                android:id="@+id/bt_RoleResponse"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Role Response"
+                android:textSize="15sp" 
+                android:layout_weight="50"
+                android:gravity="bottom|center_horizontal"
+                android:background="@drawable/ic_action_refresh_dark"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

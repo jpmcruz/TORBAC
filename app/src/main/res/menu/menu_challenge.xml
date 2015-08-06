@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Single menu item 
+         Set id, icon and Title for each menu item
+    -->
+     
+    <item android:id="@+id/check"
+          android:icon="@drawable/ic_action_done"
+          android:title="Verify"
+           app:showAsAction="always|withText" />
+    
+    <item android:id="@+id/create_challenge"
+          android:icon="@drawable/directory_up"
+          android:title="Create Challenge" />
+    
+    <item android:id="@+id/scan_response"
+          android:icon="@drawable/directory_icon"
+          android:title="Scan Response" 
+           app:showAsAction="collapseActionView"/>
+
+ 
+    <item android:id="@+id/settings"
+          android:icon="@drawable/ic_launcher"
+          android:title="Settings" />
+</menu>
